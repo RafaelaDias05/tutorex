@@ -1,5 +1,5 @@
 from view.questao_view import menu_questoes
-from view.atividade_view import menu_atividades
+from view.atividade_view import montar_atividade
 from database.conect_database import criar_tabelas
 from database.insert_data import inserir_dados
 
@@ -20,7 +20,7 @@ def menu_principal():
         elif opcao == "2":
             menu_questoes()
         elif opcao == "3":
-            menu_atividades()
+            montar_atividade()
         elif opcao == "4":
             #menu_porfessor()
             print("Ops! Sem implementação ainda")

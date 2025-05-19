@@ -42,3 +42,21 @@ def menu_busca_questoes():
             print(f"Enunciado: {q.enunciado}")
             print(f"Alternativas: {q.alternativas}")
             print(f"Gabarito: {q.gabarito}")
+
+def menu_questoes():
+    while True:
+        print("\n Menu de Questões")
+        print("1. Cadastrar Questão")
+        print("2. Buscar Questões")
+        print("0. Voltar ao menu principal")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            menu_cadastro_questao()
+        elif opcao == "2":
+            menu_busca_questoes()
+        elif opcao == "0":
+            break
+        else:
+            print("Opção inválida!")
