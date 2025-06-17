@@ -3,6 +3,7 @@ from controllers.atividade_controller import criar_atividade
 from controllers.auth_controller import cadastrar_usuario
 from controllers.aluno_controller import cadastrar_aluno
 from controllers.funcionario_controller import cadastrar_funcionario
+
 from model.questao import Questao
 from model.aluno import Aluno
 from model.funcionario import Funcionario
@@ -23,7 +24,6 @@ def inserir_dados():
         cadastrar_usuario(user)
         print(" 3 usuários criados (carlos, fernanda, joao).")
 
-
     # --- FUNCIONÁRIOS ---
     funcionarios = [
         Funcionario("Carlos Silva", "Rua A, 123", "11999999999", "carlos@escola.com", "carlos", "senha123"),
@@ -31,7 +31,8 @@ def inserir_dados():
         Funcionario("João Pedro", "Rua D, 101", "11777777777", "joao@escola.com", "joao", "senha789")
     ]
     for f in funcionarios:
-        cadastrar_funcionario(f)
+         
+        cadastrar_funcionario(f) 
     print("3 funcionários criados.")
 
     # --- ALUNOS ---
